@@ -12,128 +12,59 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header class="header h-auto" id="header">
-      <div class="container-fluid h-100">
-        <div class="row border h-100">
-          <div class="col-10 col-lg-2 p-0 bg-primary">
-            <div class="row h-100">
-              <div class="col-5 col-lg-12">
-                <div
-                  class="d-flex align-items-center justify-content-center h-100 p-lg-2 px-lg-3"
-                >
-                  <img
-                    src="./img/logo.png"
-                    class="text-white img-fluid w-75"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2 col-lg-10">
-            <div class="row bg-dark d-none d-lg-block">
+    <header class="header container-fluid bg-dark p-0" id="header">
+      <div class="container">
+        <div class="row">
+          <div class="12 p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark">
               <div
-                class="d-flex justify-content-between align-items-center p-0"
+                class="container-fluid align-items-center align-items-lg-end"
               >
-                <div class="d-flex align-items-center align-items-center ps-2">
-                  <div class="ps-2 pe-5 py-2 border-end border-secondary">
-                    <i class="fas fa-phone text-white px-1"></i>
-                    <span class="text-white">740.993.7266</span>
-                  </div>
+                <a class="navbar-brand" href="#">
+                  <img src="./img/logo.png" class="w-75" alt="" />
+                </a>
+                <button
+                  class="navbar-toggler border-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="fas fa-bars text-light fa-2x"></span>
+                </button>
 
-                  <div class="ps-2 pe-5 py-2 border-end border-secondary">
-                    <i class="fas fa-envelope text-white px-1"></i>
-                    <span class="text-white">Shanny90@gmail.com</span>
-                  </div>
-                </div>
-                <div class="">
-                  <ul class="d-flex justify-content-around mb-0">
-                    <li
-                      class="px-3 py-2 border-end border-start border-secondary"
-                    >
-                      <a href="#" class="">
-                        <i class="fab fa-facebook-f text-white"></i>
-                      </a>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-3">
+                      <a class="nav-link text-light" href="#">Home</a>
                     </li>
-                    <li class="px-3 py-2 border-end border-secondary">
-                      <a href="#" class="">
-                        <i class="fab fa-youtube text-white"></i>
-                      </a>
+                    <li class="nav-item px-3">
+                      <a class="nav-link text-light" href="#">Shop</a>
                     </li>
-                    <li class="px-3 py-2 border-end border-secondary">
-                      <a href="#" class="">
-                        <i class="fab fa-google-plus-g text-white"></i>
-                      </a>
+
+                    <li class="nav-item px-3">
+                      <a href="#" class="nav-link text-light">About</a>
                     </li>
-                    <li class="px-3 py-2">
-                      <a href="#" class="">
-                        <i class="fab fa-instagram text-white"></i>
+                    <li class="nav-item px-3">
+                      <a href="#" class="nav-link text-light">Contact</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a href="#" class="nav-link text-light">FAQ</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a href="#" class="nav-link">
+                        <i class="fas fa-search text-light"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-12 p-0">
-                <div
-                  class="d-flex justify-content-center justify-content-lg-end h-100 w-100"
-                >
-                  <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                    <div class="container-fluid p-0">
-                      <button
-                        class="navbar-toggler border-0"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                      >
-                        <span class="fas fa-bars text-dark"></span>
-                      </button>
-                      <div
-                        class="collapse navbar-collapse"
-                        id="navbarSupportedContent"
-                      >
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item p-2">
-                            <a
-                              class="nav-link text-black-50"
-                              aria-current="page"
-                              href="#"
-                              >Home</a
-                            >
-                          </li>
-                          <li class="nav-item py-2 px-3">
-                            <a class="nav-link text-black-50" href="#">Shop</a>
-                          </li>
-                          <li class="nav-item py-2 px-3 dropdown">
-                            <a class="nav-link text-black-50" href="#">About</a>
-                          </li>
-                          <li class="nav-item py-2 px-3">
-                            <a class="nav-link text-black-50">Contact</a>
-                          </li>
-                          <li class="nav-item py-2 px-3">
-                            <a class="nav-link text-black-50">FAQ</a>
-                          </li>
-                          <li class="nav-item py-2 px-3">
-                            <a class="nav-link text-black-50"
-                              ><i class="fas fa-search"></i>
-                            </a>
-                          </li>
-                          <li class="nav-item bg-primary py-2 px-3">
-                            <a class="nav-link text-black-50"
-                              ><i class="fas fa-bars text-light"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                </div>
-              </div>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
