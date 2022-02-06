@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 300vh;
+}
+
+.site-nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+}
+
+.home {
+  background-image: url("../img/content-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-text {
+  position: relative;
+}
+
+.home-text:before,
+.home-text:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.home-text:before {
+  top: 0;
+  left: 0;
+  right: 60%;
+  bottom: 80%;
+  border-top: 4px solid red;
+  border-left: 4px solid red;
+}
+
+.home-text:after {
+  top: 80%;
+  left: 60%;
+  right: 0;
+  bottom: 0;
+  border-bottom: 4px solid red;
+  border-right: 4px solid red;
+}
+
+.layer {
+  background-color: rgba(51, 51, 51, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.border-left {
+  border-left: 2px solid #f51c40;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    background-image: url("../img/content-mobo-1.png");
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    background-image: url("../img/content-mobo-1.png");
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    background-image: url("../img/content-mobo-1.png");
+  }
+}
