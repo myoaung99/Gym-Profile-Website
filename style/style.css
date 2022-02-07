@@ -59,6 +59,39 @@ body {
   bottom: 0;
 }
 
+.progress-bg {
+  position: absolute;
+  bottom: 0px;
+  right: 4%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 150px;
+  height: 150px;
+  opacity: 0.2;
+}
+
+.weight-bg {
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 150px;
+  height: 150px;
+  opacity: 0.2;
+}
+
+.clipboard-bg {
+  position: absolute;
+  bottom: 0px;
+  right: 100px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 150px;
+  height: 150px;
+  opacity: 0.2;
+}
+
 @media screen and (max-width: 1024px) {
   .home {
     background-image: url("../img/content-mobo-1.png");
