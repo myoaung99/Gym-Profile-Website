@@ -92,10 +92,26 @@ body {
   opacity: 0.2;
 }
 
+.divider {
+  width: 130px;
+  border-bottom: 4px solid red;
+  margin-bottom: 20px;
+}
+
+.about-us .container-fluid {
+  background-image: url("../img/bg-1.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom right;
+}
+
 @media screen and (max-width: 1024px) {
   .home {
     background-image: url("../img/content-mobo-1.png");
     background-position: center;
+  }
+  .feature-card {
+    width: 75% !important;
   }
 }
 
@@ -109,5 +125,12 @@ body {
 @media screen and (max-width: 480px) {
   .home {
     background-image: url("../img/content-mobo-1.png");
+  }
+  .about-us .container-fluid {
+    background-size: 100%;
+    background-position: top 18% right 0px;
+  }
+  .feature-card {
+    width: 100% !important;
   }
 }
