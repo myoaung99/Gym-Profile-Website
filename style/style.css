@@ -94,7 +94,7 @@ body {
 
 .divider {
   width: 130px;
-  border-bottom: 4px solid red;
+  border-bottom: 5px solid red;
   margin-bottom: 20px;
 }
 
@@ -125,11 +125,15 @@ body {
   content: "";
   width: 25px;
   height: 0px;
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid #e41c26;
 }
 
 .us-img {
   height: 100px;
+}
+
+.review-topBox {
+  margin-top: -80px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -159,5 +163,8 @@ body {
   }
   .feature-card {
     width: 100% !important;
+  }
+  .mobo-review-text {
+    width: 90% !important;
   }
 }
