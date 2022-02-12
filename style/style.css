@@ -105,6 +105,33 @@ body {
   background-position: bottom right;
 }
 
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slick-dots li button:before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  border: 2px solid white;
+}
+
+.us-img {
+  height: 100px;
+}
+
 @media screen and (max-width: 1024px) {
   .home {
     background-image: url("../img/content-mobo-1.png");
