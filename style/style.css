@@ -124,8 +124,8 @@ body {
 .slick-dots li button:before {
   content: "";
   width: 25px;
-  height: 2px;
-  border: 2px solid white;
+  height: 0px;
+  border-bottom: 4px solid white;
 }
 
 .us-img {
