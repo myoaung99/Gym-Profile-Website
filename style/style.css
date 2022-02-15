@@ -146,6 +146,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
+}
+
+.play-btn img{
+  margin: 0 auto !important;
 }
 
 .carousel-video-caption {
