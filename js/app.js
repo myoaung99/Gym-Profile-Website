@@ -35,7 +35,7 @@ $(document).ready(function () {
       // instead of a settings object
     ],
   });
-  $(".training-video").slick({
+  $(".training-video-slide").slick({
     dots: true,
     infinite: false,
     speed: 300,
