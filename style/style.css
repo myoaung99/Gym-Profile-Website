@@ -136,7 +136,7 @@ body {
   margin-top: -80px;
 }
 
-.big-video-container{
+.big-video-container {
   position: relative;
 }
 
@@ -144,7 +144,6 @@ body {
   background-image: url("../img/icon/strip-bg.png");
   background-size: cover;
 }
-
 
 .play-btn {
   position: absolute;
@@ -154,21 +153,6 @@ body {
   text-align: center;
 }
 
-
-/*}*/
-
-/*.play-btn img{*/
-/*  margin: 0 auto !important;*/
-/*}*/
-
-/*.carousel-video-caption {*/
-/*  bottom: 0;*/
-/*  left: 50%;*/
-/*  transform: translate(-50%, 50%);*/
-/*  border-radius: 1.25rem;*/
-/*  padding: 10px 15px;*/
-/*}*/
-
 .video-title {
   display: inline;
   background-image: url("../img/icon/Videos-outline-text.svg");
@@ -177,27 +161,25 @@ body {
   background-position: center;
 }
 
-.training-video-container{
+.training-video-container {
   position: relative;
-
 }
-.training-video-container::before{
+.training-video-container::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(100,0,0,0.5);
-  border-radius: 1.25rem;
-
-}
-
-.training-video-img{
+  background-color: rgba(100, 0, 0, 0.5);
   border-radius: 1.25rem;
 }
 
-.training-video-btn-container{
+.training-video-img {
+  border-radius: 1.25rem;
+}
+
+.training-video-btn-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -205,11 +187,11 @@ body {
   text-align: center;
 }
 
-.training-video-btn{
+.training-video-btn {
   width: 75%;
 }
 
-.training-video-caption{
+.training-video-caption {
   max-width: 400px;
   position: absolute;
   bottom: 0;
@@ -222,12 +204,22 @@ body {
   text-align: center;
 }
 
-.product-img{
+.product-img {
   margin-top: -130px;
 }
-.product-container{
+.product-container {
   margin-top: 150px;
   padding-bottom: 30px;
+}
+
+.blog-card-img {
+  border-radius: 1.25rem;
+}
+
+.blog-card-date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -269,9 +261,7 @@ body {
     padding: 10px;
   }
 
-  .training-video-caption{
-
+  .training-video-caption {
     width: 80%;
-
   }
 }
