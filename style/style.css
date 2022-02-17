@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   height: 300vh;
 }
@@ -94,7 +98,7 @@ body {
 
 .divider {
   width: 130px;
-  border-bottom: 5px solid red;
+  border-bottom: 3px solid red;
   margin-bottom: 20px;
 }
 
