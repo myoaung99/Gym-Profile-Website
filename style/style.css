@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -21,10 +21,13 @@ body {
 }
 
 .site-nav {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   z-index: 2000;
+  background-color: #000000ee;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 5px#00000020;
 }
 
 .home {
@@ -275,55 +278,56 @@ body {
     position: relative;
     top: 26px;
     left: 50px;
-}
-
-@media screen and (max-width: 480px) {
-  .home {
-    background-image: url("../img/content-mobo-1.png");
-  }
-  .about-us .container-fluid {
-    background-size: 100%;
-    background-position: top 18% right 0px;
-  }
-  .feature-card {
-    width: 100% !important;
-  }
-  .mobo-review-text {
-    width: 90% !important;
-  }
-  .play-btn img {
-    width: 25% !important;
-  }
-  .carousel-video-caption {
-    width: 80%;
-    padding: 10px;
   }
 
-  .training-video-caption {
-    width: 80%;
-  }
-  .blog-title-des {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .product-price {
-    font-size: 50px !important;
-  }
-  .product-des {
-    width: 100% !important;
-  }
-  .video-des {
-    width: 80% !important;
-  }
-  .choose-us-des {
-    width: 80% !important;
-  }
-  .about-us-img {
-    transform: unset !important;
-    position: static !important;
-    top: unset !important;
-    left: unset !important;
-    max-width: 100% !important;
-    height: auto !important;
+  @media screen and (max-width: 480px) {
+    .home {
+      background-image: url("../img/content-mobo-1.png");
+    }
+    .about-us .container-fluid {
+      background-size: 100%;
+      background-position: top 18% right 0px;
+    }
+    .feature-card {
+      width: 100% !important;
+    }
+    .mobo-review-text {
+      width: 90% !important;
+    }
+    .play-btn img {
+      width: 25% !important;
+    }
+    .carousel-video-caption {
+      width: 80%;
+      padding: 10px;
+    }
+
+    .training-video-caption {
+      width: 80%;
+    }
+    .blog-title-des {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .product-price {
+      font-size: 50px !important;
+    }
+    .product-des {
+      width: 100% !important;
+    }
+    .video-des {
+      width: 80% !important;
+    }
+    .choose-us-des {
+      width: 80% !important;
+    }
+    .about-us-img {
+      transform: unset !important;
+      position: static !important;
+      top: unset !important;
+      left: unset !important;
+      max-width: 100% !important;
+      height: auto !important;
+    }
   }
 }
