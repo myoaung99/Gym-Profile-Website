@@ -253,6 +253,15 @@ body {
     background-image: url("../img/content-mobo-1.png");
     background-position: center;
   }
+  .contact-title {
+    font-size: 38px !important;
+  }
+  .contact-subtitle {
+    font-size: 18px !important;
+  }
+  .contact-des {
+    width: 80% !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
