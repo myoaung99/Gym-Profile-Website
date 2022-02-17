@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -262,6 +266,15 @@ body {
   .contact-des {
     width: 80% !important;
   }
+  .video-des {
+    width: 75% !important;
+  }
+  .about-us-img {
+    width: 100%;
+    transform: scale(1.5);
+    position: relative;
+    top: 26px;
+    left: 50px;
 }
 
 @media screen and (max-width: 480px) {
@@ -292,5 +305,25 @@ body {
   .blog-title-des {
     width: 80%;
     margin: 0 auto;
+  }
+  .product-price {
+    font-size: 50px !important;
+  }
+  .product-des {
+    width: 100% !important;
+  }
+  .video-des {
+    width: 80% !important;
+  }
+  .choose-us-des {
+    width: 80% !important;
+  }
+  .about-us-img {
+    transform: unset !important;
+    position: static !important;
+    top: unset !important;
+    left: unset !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
