@@ -226,6 +226,10 @@ body {
   left: 10px;
 }
 
+.contact-container {
+  border-radius: 1.25rem;
+}
+
 @media screen and (max-width: 1024px) {
   .home {
     background-image: url("../img/content-mobo-1.png");
