@@ -138,7 +138,7 @@ body {
 }
 
 .about-us .container-fluid {
-  background-image: url("../img/bg-1.png");
+  background-image: url("../img/bg-1.webp");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: bottom right;
@@ -180,7 +180,7 @@ body {
 }
 
 .big-video-bg {
-  background-image: url("../img/icon/strip-bg.png");
+  background-image: url("../img/icon/strip-bg.webp");
   background-size: cover;
 }
 
@@ -291,7 +291,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .home {
-    background-image: url("../img/content-mobo-1.png");
+    background-image: url("../img/content-mobo-1.webp");
     background-position: center;
   }
   .feature-card {
@@ -304,7 +304,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .home {
-    background-image: url("../img/content-mobo-1.png");
+    background-image: url("../img/content-mobo-1.webp");
     background-position: center;
   }
   .contact-title {
