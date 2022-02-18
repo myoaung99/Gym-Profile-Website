@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-dark .navbar-toggler {
-  color: #000;
+  color: transparent;
 }
 
 .navbar-toggler:focus-visible {
@@ -270,6 +270,25 @@ body {
   font-size: 1.5rem;
 }
 
+.d-1 {
+  animation-delay: 0.5s;
+}
+.d-2 {
+  animation-delay: 1s;
+}
+.d-3 {
+  animation-delay: 1.5s;
+}
+.d-4 {
+  animation-delay: 2s;
+}
+.d-5 {
+  animation-delay: 2.5s;
+}
+.d-6 {
+  animation-delay: 3s;
+}
+
 @media screen and (max-width: 1024px) {
   .home {
     background-image: url("../img/content-mobo-1.png");
@@ -300,13 +319,9 @@ body {
   .video-des {
     width: 75% !important;
   }
-  /* .about-us-img {
-    width: 100%;
-    transform: scale(1.5);
-    position: relative;
-    top: 26px;
-    left: 50px;
-  } */
+  .navbar-nav {
+    text-align: center;
+  }
 
   .about-us-img {
     width: 100% !important;
