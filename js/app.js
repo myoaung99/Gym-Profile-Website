@@ -71,4 +71,52 @@ $(document).ready(function () {
       // instead of a settings object
     ],
   });
+
+  $(".counter").counterUp({
+    delay: 10,
+    time: 1000,
+  });
+
+  scrollNav();
+
+  const currentHeight = $(window).height();
+  $(window).scroll(function () {
+    let scroll = $(this).scrollTop();
+
+    if (currentHeight <= scroll) {
+      $(".site-nav").addClass("site-nav-scroll");
+    } else {
+      $(".site-nav").removeClass("site-nav-scroll");
+    }
+  });
 });
+function setActive(current) {
+  $(`.nav-link`).removeClass("activeNav");
+  $(`.nav-link[href="#${current}"]`).addClass("activeNav");
+}
+
+function scrollNav() {
+  const currentActive = $("section[id]");
+  console.log(currentActive);
+  currentActive.waypoint(
+    function (direction) {
+      if (direction == "down") {
+        setActive($(this.element).attr("id"));
+      }
+    },
+    {
+      offset: "130px",
+    }
+  );
+
+  currentActive.waypoint(
+    function (direction) {
+      if (direction == "up") {
+        setActive($(this.element).attr("id"));
+      }
+    },
+    {
+      offset: "0px",
+    }
+  );
+}

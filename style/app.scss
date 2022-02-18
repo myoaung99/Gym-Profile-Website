@@ -4,3 +4,7 @@ $secondary: #2a2a2a;
 $dark: #111111;
 $font-family-sans-serif: "Roboto", sans-serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+html {
+  overflow-x: hidden;
+}

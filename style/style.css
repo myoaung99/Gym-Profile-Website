@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 a {
   text-decoration: none;
 }
@@ -21,13 +17,41 @@ body {
 }
 
 .site-nav {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  position: absolute;
+  top: 0;
   z-index: 2000;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #000;
+}
+
+.navbar-toggler:focus-visible {
+  outline: none;
+}
+
+.site-nav-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #000000ee;
   backdrop-filter: blur(3px);
   box-shadow: 0 0 5px#00000020;
+  animation: toScroll 0.3s ease-in;
+}
+
+@keyframes toScroll {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.activeNav {
+  border: 2px solid #e41c26;
+  border-radius: 0.25rem;
 }
 
 .home {
@@ -204,6 +228,7 @@ body {
 
 .training-video-btn {
   width: 75%;
+  margin: 0 auto;
 }
 
 .training-video-caption {
@@ -279,55 +304,62 @@ body {
     top: 26px;
     left: 50px;
   }
+  .site-nav {
+    background-color: #000000ee;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 5px#00000020;
+  }
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home {
+    background-image: url("../img/content-mobo-1.png");
+  }
+  .about-us .container-fluid {
+    background-size: 100%;
+    background-position: top 18% right 0px;
+  }
+  .feature-card {
+    width: 100% !important;
+  }
+  .mobo-review-text {
+    width: 90% !important;
+  }
+  .play-btn img {
+    width: 25% !important;
+  }
+  .carousel-video-caption {
+    width: 80%;
+    padding: 10px;
+  }
 
-  @media screen and (max-width: 480px) {
-    .home {
-      background-image: url("../img/content-mobo-1.png");
-    }
-    .about-us .container-fluid {
-      background-size: 100%;
-      background-position: top 18% right 0px;
-    }
-    .feature-card {
-      width: 100% !important;
-    }
-    .mobo-review-text {
-      width: 90% !important;
-    }
-    .play-btn img {
-      width: 25% !important;
-    }
-    .carousel-video-caption {
-      width: 80%;
-      padding: 10px;
-    }
-
-    .training-video-caption {
-      width: 80%;
-    }
-    .blog-title-des {
-      width: 80%;
-      margin: 0 auto;
-    }
-    .product-price {
-      font-size: 50px !important;
-    }
-    .product-des {
-      width: 100% !important;
-    }
-    .video-des {
-      width: 80% !important;
-    }
-    .choose-us-des {
-      width: 80% !important;
-    }
-    .about-us-img {
-      transform: unset !important;
-      position: static !important;
-      top: unset !important;
-      left: unset !important;
-      max-width: 100% !important;
-      height: auto !important;
-    }
+  .training-video-caption {
+    width: 80%;
+  }
+  .blog-title-des {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .product-price {
+    font-size: 50px !important;
+  }
+  .product-des {
+    width: 100% !important;
+  }
+  .video-des {
+    width: 80% !important;
+  }
+  .choose-us-des {
+    width: 80% !important;
+  }
+  .about-us-img {
+    transform: unset !important;
+    position: static !important;
+    top: unset !important;
+    left: unset !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
