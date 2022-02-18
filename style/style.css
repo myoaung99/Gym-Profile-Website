@@ -278,6 +278,9 @@ body {
   .feature-card {
     width: 75% !important;
   }
+  .about-us-img {
+    width: 75% !important;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -297,12 +300,17 @@ body {
   .video-des {
     width: 75% !important;
   }
-  .about-us-img {
+  /* .about-us-img {
     width: 100%;
     transform: scale(1.5);
     position: relative;
     top: 26px;
     left: 50px;
+  } */
+
+  .about-us-img {
+    width: 100% !important;
+    height: auto !important;
   }
   .site-nav {
     background-color: #000000ee;
@@ -355,11 +363,7 @@ body {
     width: 80% !important;
   }
   .about-us-img {
-    transform: unset !important;
-    position: static !important;
-    top: unset !important;
-    left: unset !important;
-    max-width: 100% !important;
+    width: 75% !important;
     height: auto !important;
   }
 }
