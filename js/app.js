@@ -121,11 +121,17 @@ function scrollNav() {
   );
 }
 
+$(window).on("load", function () {
+  $(".loader-container").fadeOut(1000, function () {
+    $(this).remove();
+  });
+});
+
 wow = new WOW({
   boxClass: "wow", // default
   animateClass: "animate__animated", // default
   offset: 0, // default
-  mobile: true, // default
+  mobile: false, // default
   live: true, // default
 });
 wow.init();

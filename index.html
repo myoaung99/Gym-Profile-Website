@@ -1,75 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<div class="loader-container">
+    <div class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<style>
+    .loader-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: tr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3000;
+    }
 
+    .lds-facebook {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+
+    .lds-facebook div {
+        display: inline-block;
+        position: absolute;
+        left: 8px;
+        width: 16px;
+        background: #e41c26;
+        animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+
+    .lds-facebook div:nth-child(1) {
+        left: 8px;
+        animation-delay: -0.24s;
+    }
+
+    .lds-facebook div:nth-child(2) {
+        left: 32px;
+        animation-delay: -0.12s;
+    }
+
+    .lds-facebook div:nth-child(3) {
+        left: 56px;
+        animation-delay: 0;
+    }
+
+    @keyframes lds-facebook {
+        0% {
+            top: 8px;
+            height: 64px;
+        }
+
+        50%,
+        100% {
+            top: 24px;
+            height: 32px;
+        }
+    }
+</style>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+
+    <meta property="og:title" content="Best Training Center in Myanmar" />
+    <meta property="og:image" content="./thumbnail.png" />
+    <meta property="og:image:width" content="1200" /> 
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Train Hard Gym" />
+    <meta property="og:description" content="လှပတောင့်တင်းတဲ့ ခန္ဓာကိုယ်တစ်ခု ပိုင်ဆိုင်လိုလျှင် မြန်မာပြည်ရဲ့ နံပါတ်တစ် Traning Centerကို လှမ်းလာခဲ့ပါ" />
+
+    <meta name="title" content="Best Training Center in Myanmar">
+    <meta name="description" content="လှပတောင့်တင်းတဲ့ ခန္ဓာကိုယ်တစ်ခု ပိုင်ဆိုင်လိုလျှင် မြန်မာပြည်ရဲ့ နံပါတ်တစ် Traning Centerကို လှမ်းလာခဲ့ပါ">
+    <meta name="keywords" content="gym, train, body, build, local, vitamin, hoodies, tops, shirts, blog, training">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <title>Train Hard</title>
+
+    <link rel="icon" type="icon/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css" />
     <link href="./vendor/fontawesome/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./vendor/animate__it/animate.min.css" />
+    <link rel="stylesheet" href="./vendor/animate__it/animate.css" />
     <link rel="stylesheet" href="./vendor/slick/slick.css" />
     <link rel="stylesheet" href="./vendor/slick/slick-theme.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/app.css" />
     <link rel="stylesheet" href="./style/style.css" />
+   
+    
 </head>
 
 <body>
     <!--Header Section Start-->
-    <header id="header" class="header p-0" >
-        <div class="site-nav container-fluid wow animate__slideInDown">
+    <header id="header" class="header p-0">
+        <div class="site-nav container-fluid wow animate__fadeInDown">
             <div class="container">
-                 <div class="row">
-                <div class="col-12 p-0">
-                    <nav class="navbar navbar-expand-lg navbar-dark">
-                        <div class="container-fluid align-items-center align-items-lg-end  m-0">
-                            <a class="navbar-brand" href="#">
-                                <img src="./img/logo.png" class="w-75 wow animate__fadeIn d-1" alt="" />
-                            </a>
-                            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="fas fa-bars text-light fa-2x"></span>
-                            </button>
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
+                            <div class="container-fluid align-items-center align-items-lg-end  m-0">
+                                <a class="navbar-brand" href="#">
+                                    <img src="./img/logo.png" class="w-75 wow animate__fadeIn d-1" alt="" />
+                                </a>
+                                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="fas fa-bars text-light fa-2x"></span>
+                                </button>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-4 pt-lg-0 animate__animated animate__fadeInRightBig d-2">
-                                    <li class="nav-item ">
-                                        <a class="nav-link px-3 activeNav text-light " href="#home">Home</a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link px-3 text-light" href="#about">About</a>
-                                    </li>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul
+                                        class="navbar-nav ms-auto mb-2 mb-lg-0 pt-4 pt-lg-0 animate__animated animate__fadeInDown ">
+                                        <li class="nav-item ">
+                                            <a class="nav-link px-3 activeNav text-light " href="#home">Home</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link px-3 text-light" href="#about">About</a>
+                                        </li>
 
-                                    <li class="nav-item ">
-                                        <a href="#review" class="nav-link px-3 text-light">Review</a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a href="#videos" class="nav-link px-3 text-light">Videos</a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a href="#shop" class="nav-link px-3 text-light">Shop</a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a href="#blog" class="nav-link px-3 text-light">Blog</a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a href="#contact" class="nav-link px-3 text-light">Contact</a>
-                                    </li>
-                                    
-                                </ul>
+                                        <li class="nav-item ">
+                                            <a href="#review" class="nav-link px-3 text-light">Review</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="#videos" class="nav-link px-3 text-light">Videos</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="#shop" class="nav-link px-3 text-light">Shop</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="#blog" class="nav-link px-3 text-light">Blog</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="#contact" class="nav-link px-3 text-light">Contact</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            </div>
-            
+
         </div>
-           
-   
+
+
     </header>
 
     <!--Home section start-->
@@ -80,7 +165,7 @@
                     <div class="col-12 col-md-8 col-lg-7 p-0">
                         <div class="min-vh-100 d-flex align-items-end align-items-md-center">
                             <div class="mb-3 mb-lg-5 pb-lg-5 p-4 p-lg-5 home-text wow animate__fadeIn d-3 ">
-                                <p class="h4 text-white">You Dont't Find</p>
+                                <p class="h4 text-white">You Don't Find</p>
                                 <h1 class="text-uppercase fw-bold display-1 text-light">
                                     Wll power
                                 </h1>
@@ -92,112 +177,117 @@
                 </div>
             </div>
         </div>
-           
-    
+
+
     </section>
 
     <!--About Section start-->
     <section id="about" class="min-vh-100">
         <div class="container-fluid">
             <div class="row">
-            <div
-                class="col-12 col-md-3 me-lg-3 bg-dark flex-grow-1 d-flex justify-content-center justify-content-md-end p-5 position-relative">
-                
-                <img src="./img/icon/linear color.svg" class="progress-bg d-none d-lg-block " />
-                <div class="d-flex align-items-center flex-column justify-content-center  feature-card p-lg-5  ">
-                    <img src="./img/icon/linear color.svg" alt="" class="h-25 text-center mb-3 wow animate__fadeInDown" />
-                    <h4 class="text-uppercase mb-3 text-light mb-2 fw-bolder wow animate__fadeIn">
-                        Progressing
-                    </h4>
-                    <p class="text-center mb-3 text-white-50 wow animate__fadeInUpBig">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                        dolores ullam Lorem ipsum dolor sit amet consectetu
-                    </p>
+                <div
+                    class="col-12 col-md-3 me-lg-3 bg-dark flex-grow-1 d-flex justify-content-center justify-content-md-end p-5 position-relative">
+
+                    <img src="./img/icon/linear color.svg" class="progress-bg d-none d-lg-block " />
+                    <div class="d-flex align-items-center flex-column justify-content-center  feature-card p-lg-5  ">
+                        <img src="./img/icon/linear color.svg" alt=""
+                            class="h-25 text-center mb-3 wow animate__fadeInDown" />
+                        <h4 class="text-uppercase mb-3 text-light mb-2 fw-bolder wow animate__fadeIn">
+                            Progressing
+                        </h4>
+                        <p class="text-center mb-3 text-white-50 wow animate__fadeInUpBig">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                            dolores ullam Lorem ipsum dolor sit amet consectetu
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 bg-white d-flex justify-content-center position-relative p-5">
+                    <img src="./img/icon/weight.svg" class="weight-bg d-none d-lg-block " />
+                    <div class="d-flex align-items-center flex-column justify-content-center p-lg-5 feature-card">
+                        <img src="./img/icon/weight.svg" alt="" class="h-25 text-center mb-3 wow animate__fadeInDown" />
+                        <h4 class="text-uppercase mb-3 text-primary mb-2 fw-bolder  wow animate__fadeIn">
+                            Workout
+                        </h4>
+                        <p class="text-center mb-3 text-black-50 wow animate__fadeInUpBig">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                            dolores ullam Lorem ipsum dolor sit amet consectetu
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-md-3 ms-lg-3 bg-primary flex-grow-1 d-flex justify-content-center justify-content-md-start p-5 position-relative">
+                    <img src="./img/icon/clipboard.svg" class="clipboard-bg d-none d-lg-block" />
+                    <div class="d-flex align-items-center flex-column justify-content-center feature-card p-lg-5">
+                        <img src="./img/icon/clipboard.svg" alt=""
+                            class="h-25 text-center mb-3  wow animate__fadeInDown" />
+                        <h4 class="text-uppercase mb-3 text-light mb-2 fw-bolder  wow animate__fadeIn">
+                            Nutrition
+                        </h4>
+                        <p class="text-center mb-3 text-white-50 wow animate__fadeInUpBig">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                            dolores ullam Lorem ipsum dolor sit amet consectetu
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 bg-white d-flex justify-content-center position-relative p-5">
-                <img src="./img/icon/weight.svg" class="weight-bg d-none d-lg-block " />
-                <div class="d-flex align-items-center flex-column justify-content-center p-lg-5 feature-card">
-                    <img src="./img/icon/weight.svg" alt="" class="h-25 text-center mb-3 wow animate__fadeInDown" />
-                    <h4 class="text-uppercase mb-3 text-primary mb-2 fw-bolder  wow animate__fadeIn">
-                        Workout
-                    </h4>
-                    <p class="text-center mb-3 text-black-50 wow animate__fadeInUpBig">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                        dolores ullam Lorem ipsum dolor sit amet consectetu
-                    </p>
-                </div>
-            </div>
-            <div
-                class="col-12 col-md-3 ms-lg-3 bg-primary flex-grow-1 d-flex justify-content-center justify-content-md-start p-5 position-relative">
-                <img src="./img/icon/clipboard.svg" class="clipboard-bg d-none d-lg-block" />
-                <div class="d-flex align-items-center flex-column justify-content-center feature-card p-lg-5">
-                    <img src="./img/icon/clipboard.svg" alt="" class="h-25 text-center mb-3  wow animate__fadeInDown" />
-                    <h4 class="text-uppercase mb-3 text-light mb-2 fw-bolder  wow animate__fadeIn">
-                        Nutrition
-                    </h4> 
-                    <p class="text-center mb-3 text-white-50 wow animate__fadeInUpBig">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                        dolores ullam Lorem ipsum dolor sit amet consectetu
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row about-us d-flex align-items-center">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row mt-3 h-100 align-items-center flex-column-reverse flex-md-row">
-                        <div class="col-12 col-md-6">
-                            <div class="">
-                                <span class="text-uppercase text-black-50 fw-bold wow animate__fadeIn">about us
-                                </span>
-                                <h1 class="h1 fw-bolder mb-0 wow animate__slideInDown">Who Are We</h1>
-                                <div class="divider wow animate__fadeInLeft animate__delay-1s"></div>
-                                <p class="fw-bold mb-3 mb-md-5 wow animate__fadeInLeft">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Hic ipsa voluptate incidunt nam magnam maxime, quia non
-                                    repudiandae alias cumque sunt laborum! Aspernatur voluptate
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Hic ipsa voluptate incidunt nam magnam maxime, quia non
-                                    repudiandae alias 
-                                </p>
-                                <div class="row h-100 d-flex align-items-center mb-4 wow animate__slideInUp">
-                                    <div class="col-3 col-md-4 col-lg-2">
-                                        <div class="">
-                                            <img src="./img/icon/sit-up.png" class="img-fluid  p-md-1" alt="" />
+            <div class="row about-us d-flex align-items-center">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row mt-3 h-100 align-items-center flex-column-reverse flex-md-row mb-4 mb-md-0">
+                            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                                <div class="">
+                                    <span class="text-uppercase text-black-50 fw-bold wow animate__fadeIn">about us
+                                    </span>
+                                    <h1 class="h1 fw-bolder mb-0 wow animate__fadeInDown">Who Are We</h1>
+                                    <div class="divider wow animate__fadeInLeft animate__delay-1s"></div>
+                                    <p class="fw-bold mb-3 mb-md-5 wow animate__fadeInLeft">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Hic ipsa voluptate incidunt nam magnam maxime, quia non
+                                        repudiandae alias cumque sunt laborum! Aspernatur voluptate
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Hic ipsa voluptate incidunt nam magnam maxime, quia non
+                                        repudiandae alias
+                                    </p>
+                                    <div class="row h-100 d-flex align-items-center mb-4 wow animate__fadeInUp">
+                                        <div class="col-3 col-md-4 col-lg-2">
+                                            <div class="">
+                                                <img src="./img/icon/sit-up.png" class="img-fluid  p-md-1" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-9 col-md-8 col-lg-10">
+                                            <div class="">
+                                                <h4>Fitness Exercise</h4>
+                                                <p class="text-black-50 mb-0">
+                                                    Lorem ipsum dolor, sit amet conse ctetur adipisicing
+                                                    elit. Laboriosa
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-9 col-md-8 col-lg-10">
-                                        <div class="">
-                                            <h4>Fitness Exercise</h4>
-                                            <p class="text-black-50 mb-0">
-                                                Lorem ipsum dolor, sit amet conse ctetur adipisicing
-                                                elit. Laboriosa
-                                            </p>
+                                    <div class="row h-100 d-flex align-items-center wow animate__fadeInUp">
+                                        <div class="col-3 col-md-4 col-lg-2">
+                                            <div class="">
+                                                <img src="./img/icon/outline.png" class="img-fluid w-100 p-md-2"
+                                                    alt="" />
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="row h-100 d-flex align-items-center wow animate__slideInUp">
-                                    <div class="col-3 col-md-4 col-lg-2">
-                                        <div class="">
-                                            <img src="./img/icon/outline.png" class="img-fluid w-100 p-md-2" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="col-9 col-md-8 col-lg-10">
-                                        <div class="">
-                                            <h4>Cardio Training</h4>
-                                            <p class="text-black-50 mb-0">
-                                                Lorem ipsum dolor, sit amet consec tetur adipisicing
-                                                elit. Laboriosa
-                                            </p>
+                                        <div class="col-9 col-md-8 col-lg-10">
+                                            <div class="">
+                                                <h4>Cardio Training</h4>
+                                                <p class="text-black-50 mb-0">
+                                                    Lorem ipsum dolor, sit amet consec tetur adipisicing
+                                                    elit. Laboriosa
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 p-0">
-                            <div class="mb-4 mb-md-0">
-                                <img src="./img/trainer.png" alt="" class="about-us-img w-75 bg-1 wow animate__fadeInRight" />
+                            <div class="col-12 col-md-6 p-0">
+                                <div class="mb-4 mb-md-0">
+                                    <img src="./img/trainer.png" alt=""
+                                        class="about-us-img w-75 bg-1 wow animate__fadeInRight" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -205,24 +295,23 @@
             </div>
         </div>
         </div>
-        </div>
-       
+
 
         <div id="choose-us" class="choose-us">
             <div class=" bg-black pt-2 pb-1 py-md-5">
                 <div class="container d-flex flex-column justify-content-center mb-5">
                     <div class="d-flex align-items-center flex-column my-5">
                         <h1 class="text-uppercase text-white fw-bolder wow animate__heartBeat">why choose us</h1>
-                        <div class="divider wow animate__slideInLeft"></div>
+                        <div class="divider wow animate__fadeInLeft"></div>
                         <p class="text-white-50 w-50 choose-us-des text-center wow animate__fadeIn">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
                             soluta dolorem magnam quidem in repellat facilis mollitia ullam
                             officiis
                         </p>
                     </div>
-    
+
                     <!--          Item Slider ဖြစ်ပါတယ်-->
-                    <div class="row us-slick wow animate__slideInUp">
+                    <div class="row us-slick wow animate__fadeInUp">
                         <div class="col-12 col-md-3 mx-3">
                             <div class="d-flex align-items-center flex-column bg-secondary py-5 mb-5">
                                 <h4 class="text-uppercase text-white">Tops</h4>
@@ -259,7 +348,7 @@
                                 </p>
                             </div>
                         </div>
-    
+
                         <div class="col-12 col-md-3 mx-3">
                             <div class="d-flex align-items-center flex-column bg-secondary py-5 mb-5">
                                 <h4 class="text-uppercase text-white">Tops</h4>
@@ -296,7 +385,7 @@
                                 </p>
                             </div>
                         </div>
-    
+
                         <div class="col-12 col-md-3 mx-3">
                             <div class="d-flex align-items-center flex-column bg-secondary py-5 mb-5">
                                 <h4 class="text-uppercase text-white">Tops</h4>
@@ -343,9 +432,9 @@
         <div class="container py-5">
             <div class="row d-none d-md-flex review-topBox px-4">
                 <!--          Review Image ဖြစ်ပါတယ်-->
-                <div class="col-3 p-0 wow animate__fadeInLeft">
+                <div class="col-3 p-0 wow animate__fadeInUp">
                     <div class="">
-                        <img src="./img/bg-2.png" class="img-fluid w-100 " alt="" />
+                        <img src="./img/bg-2.png" class="img-fluid" alt="" />
                     </div>
                 </div>
 
@@ -368,15 +457,16 @@
                     <div class="ps-2">
                         <p class="text-uppercase mb-0 wow animate__flash">Testimonial</p>
                         <h1 class="text-uppercase fw-bold mb-0 wow animate__fadeInRight">reviews from</h1>
-                        <h1 class="text-uppercase mb-0 display-1 fw-bolder wow animate__fadeInDown animate__slow">you</h1>
+                        <h1 class="text-uppercase mb-0 display-1 fw-bolder wow animate__fadeInDown animate__slow">you
+                        </h1>
                         <div class="divider mb-5 wow animate__fadeInRight"></div>
                         <div class=" wow animate__fadeInLeft">
-                              <span class="text-uppercase fw-light">nutritionist </span>
-                        <h4 class="text-uppercase">Jeremy George</h4>
-                        <span>⭐⭐⭐⭐⭐</span>
+                            <span class="text-uppercase fw-light">nutritionist </span>
+                            <h4 class="text-uppercase">Jeremy George</h4>
+                            <span>⭐⭐⭐⭐⭐</span>
                         </div>
-                      
-                        <p class="text-black-50 mt-3 w-100 mobo-review-text  wow animate__slideInUp">
+
+                        <p class="text-black-50 mt-3 w-100 mobo-review-text  wow animate__fadeInUp">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                             diam nonumy eirmod tempor invidunt ut labore et dolore magna
                             aliquyam erat, sed diam voluptua. At vero eos et accusam et
@@ -606,7 +696,8 @@
                         <div class="text-light py-5 py-md-0">
                             <h1 class="text-uppercase fw-bold">Title Here</h1>
                             <div class="divider border-light"></div>
-                            <p class="fw-bold product-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+                            <p class="fw-bold product-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                amet
                                 asperiores at aut autem
                                 dese</p>
                             <a href="" class="btn btn-outline-light text-uppercase">Shop now</a>
@@ -650,7 +741,9 @@
                             <h4 class="h1 fw-bolder display-4 product-price mb-3">$10</h4>
 
                             <div class="d-grid gap-2 d-lg-block">
-                                <button type="button" class="btn btn-dark  btn-lg text-uppercase me-2 wow animate__wobble d-2">add ot cart </a>
+                                <button type="button"
+                                    class="btn btn-dark  btn-lg text-uppercase me-2 wow animate__wobble d-2">add ot cart
+                                    </a>
                                     <button type="button" class="btn btn-outline-dark btn-lg  text-uppercase me-2">add
                                         wishlist</a>
                             </div>
@@ -757,7 +850,7 @@
                         <p class="text-uppercase fw-light text-primary text-center"><a href="">view more</a> </p>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </section>
@@ -795,9 +888,9 @@
 
     <section id="footer" class="footer ">
         <div class="container-fluid bg-dark px-0">
-            <div class="container ">
+            <div class="container wow animate__fadeInRight ">
                 <div class="row py-4 align-items-end p-5 p-md-0">
-                    <div class=" col-md-12 col-xl-3 wow animate__fadeInRight ">
+                    <div class=" col-md-12 col-xl-3 ">
                         <div class="">
                             <img src="./img/red-logo.png" class="img-fluid my-5" alt="">
 
@@ -832,7 +925,7 @@
 
                         </div>
                     </div>
-                    <div class=" col-12 col-md-4 col-xl-3 my-4 wow animate__fadeInRight d-1">
+                    <div class=" col-12 col-md-4 col-xl-3 my-4 ">
                         <div class="text-light">
                             <h4 class="fw-bold mb-5">Category</h4>
                             <p class="fw-light mb-4">First Link</p>
@@ -841,7 +934,7 @@
                             <p class="fw-light">Fourth Long Link</p>
                         </div>
                     </div>
-                    <div class=" col-12 col-md-4 col-xl-3 my-4 wow animate__fadeInRight d-2">
+                    <div class=" col-12 col-md-4 col-xl-3 my-4 ">
                         <div class="text-light">
                             <h4 class="fw-bold mb-5">Category</h4>
                             <p class="fw-light mb-4">First Link</p>
@@ -850,7 +943,7 @@
                             <p class="fw-light">Fourth Long Link</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-xl-3 my-4 wow animate__fadeInRight d-3">
+                    <div class="col-12 col-md-4 col-xl-3 my-4 ">
                         <div class="text-light">
                             <h4 class="fw-bold mb-5">Category</h4>
                             <p class="fw-light mb-4">First Link</p>
@@ -861,19 +954,19 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-black wow animate__fadeInUp d-4">
+            <div class="bg-black wow animate__fadeInUp">
                 <p class="text-light py-3 text-center fw-light">Copyright 2022 - All right Received</p>
             </div>
         </div>
     </section>
 
-    <script src="./js/jQuery.js"></script>
-    <script src="./vendor/slick/slick.min.js"></script>
-    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
-    <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="./vendor/way_point/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.2/umd/popper.min.js" integrity="sha512-aDciVjp+txtxTJWsp8aRwttA0vR2sJMk/73ZT7ExuEHv7I5E6iyyobpFOlEFkq59mWW8ToYGuVZFnwhwIUisKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./vendor/counter_up/counter_up.js"></script>
-    <script src="./vendor/wow/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/app.js"></script>
 </body>
 
