@@ -97,7 +97,6 @@ function setActive(current) {
 
 function scrollNav() {
   const currentActive = $("section[id]");
-  console.log(currentActive);
   currentActive.waypoint(
     function (direction) {
       if (direction == "down") {

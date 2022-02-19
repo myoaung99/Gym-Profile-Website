@@ -416,7 +416,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .home {
-    background-image: url("../img/content-mobo-1.png");
+    background-image: url("../img/content-mobo-1.webp");
   }
   .about-us .container-fluid {
     background-size: 100%;
