@@ -460,3 +460,9 @@ body {
     height: auto !important;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .navbar-brand {
+    margin: 0 !important;
+  }
+}
