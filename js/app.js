@@ -83,7 +83,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let scroll = $(this).scrollTop();
 
-    if (currentHeight <= scroll) {
+    if (currentHeight - 100 <= scroll) {
       $(".site-nav").addClass("site-nav-scroll");
     } else {
       $(".site-nav").removeClass("site-nav-scroll");
@@ -116,7 +116,7 @@ function scrollNav() {
       }
     },
     {
-      offset: "-10px",
+      offset: "-15px",
     }
   );
 }

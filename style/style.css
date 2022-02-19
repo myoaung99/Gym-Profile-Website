@@ -289,6 +289,84 @@ body {
   animation-delay: 3s;
 }
 
+.feature-card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.feature-card {
+  transition: 0.3s;
+}
+
+.nav-link {
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.2);
+}
+
+.feature-card-container:hover .feature-card {
+  transform: translateY(-15px);
+}
+
+.item-card,
+.count-items {
+  transition: 0.3s;
+}
+
+.item-card:hover {
+  transform: scale(0.95);
+}
+
+.count-items:hover {
+  transform: translateY(-5px);
+}
+
+.big-video-container:hover {
+  cursor: pointer;
+}
+.training-video-container {
+  transition: 0.3s;
+}
+
+.training-video-container:hover {
+  transform: scale(0.95);
+}
+
+.product-img {
+  transition: 0.3s;
+}
+
+.product-img:hover {
+  transform: translateY(-20px);
+}
+
+.whey-bottle {
+  transition: 0.3s;
+}
+
+.whey-bottle:hover {
+  transform: scale(1.1);
+}
+
+.price-list li:hover {
+  cursor: pointer;
+  background-color: rgb(27, 27, 27);
+  border-radius: 1.25rem;
+  color: white;
+}
+
+.footer-social-icons a {
+  transition: 0.3s;
+}
+
+.footer-social-icons a:hover {
+  transform: translateY(-5px);
+}
+
 @media screen and (max-width: 1024px) {
   .home {
     background-image: url("../img/content-mobo-1.webp");
